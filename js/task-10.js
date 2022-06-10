@@ -20,14 +20,15 @@ inputNumber.addEventListener('input', () => {
         box.style.width = `${size}px`;
         box.style.height = `${size}px`;
         box.style.backgrouhdColor = getRandomHexColor();
-        console.log(box);
+        // console.log(box);
 
         collectionBoxes.push(box);
       }
+      console.log(collectionBoxes);
+
     });
 });
 
 // boxes.append(...collectionBoxes);
 
 
-console.log(collectionBoxes);
