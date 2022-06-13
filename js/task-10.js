@@ -24,10 +24,7 @@ const createBoxes = () => {
     }
     boxes.append(...collectionBoxes);
   } else {
-    const box = document.createElement('div');
-    box.style.color = 'tomato';
-    box.textContent = 'WARNING! the number should not be more than 100!';
-    boxes.append(box);
+    alert('WARNING! the number should not be more than 100!');
   };
 };
 
