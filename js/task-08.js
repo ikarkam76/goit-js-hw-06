@@ -8,7 +8,7 @@ const onFormSubmit = (event) => {
     elements: { email, password }
   } = event.currentTarget;
 
-  if (email.value === '' || password.value === '') {
+  if (!email.value || !password.value) {
     alert('WARNING! Please fill in all the fields!');
   }
   const inputs = {
